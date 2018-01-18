@@ -1,0 +1,4 @@
+@import './flex.css';
+h1{
+    background: red url("../assets/index.jpeg");
+}

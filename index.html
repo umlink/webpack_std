@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- 开启chunks 是需要注释下面 -->
+    <!--<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>-->
+    <!--<script type="text/javascript">-->
+        <!--//插入js内容-->
+        <!--<%= compilation.assets[htmlWebpackPlugin.files.chunks.main.entry.substring(htmlWebpackPlugin.files.publicPath.length)].source() %>-->
+    <!--</script>-->
+</head>
+<body>
+<h1>hello world!!!!</h1>
+<a href="new.html">go new.html</a>
+<div id="app"></div>
+<img style="width: 100px;height: 100px;" src="./src/assets/index.jpeg" alt="">
+<!--<script src="<%= htmlWebpackPlugin.files.chunks.a.entry %>"></script>-->
+<!--<% for(var k in htmlWebpackPlugin.files.chunks) { %>-->
+    <!--<% if(k !== 'main') {  %>-->
+    <!--<script src="<%= htmlWebpackPlugin.files.chunks[k] %>"></script>-->
+    <!--<% } %>-->
+<!--<% } %>-->
+</body>
+<!-- lalalal
+ -->
+</html>
