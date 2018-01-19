@@ -44,6 +44,7 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: {
+                            minimize:true,  //css压缩
                             importLoaders: 1  //TODO 包括@import进的文件用同一个loader处理
                         }
                     },

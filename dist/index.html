@@ -21,6 +21,19 @@
     
     
 
-<script type="text/javascript" src="js/main-45997c847f9c5cd12877.js"></script><script type="text/javascript" src="js/vendor-6e85d01b6ca838b180ca.js"></script><script type="text/javascript" src="js/a-7b799120b359e7c6b7fa.js"></script></body>
+<script type="text/javascript" src="js/main-81f544dc2211b6132073.js"></script><script type="text/javascript" src="js/vendor-6e85d01b6ca838b180ca.js"></script><script type="text/javascript" src="js/a-4af80a34f290866e0a8b.js"></script></body>
 
+<script>
+    var list = [];
+    for(var i = 0; i<5;i++){
+        let _f = function(){
+            console.log(i)
+        }
+        list.push(_f)
+    }
+    for(var i = 0; i<5;i++){
+        list[i]();
+    }
+
+</script>
 </html>

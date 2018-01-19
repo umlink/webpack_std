@@ -24,4 +24,17 @@
 </body>
 <!-- lalalal
  -->
+<script >
+    var list = [];
+    for(var i = 0; i<5;i++){
+        let _f = function(){
+            console.log(i)
+        }
+        list.push(_f)
+    }
+    for(var i = 0; i<5;i++){
+        list[i]();
+    }
+
+</script>
 </html>
