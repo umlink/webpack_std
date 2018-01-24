@@ -4,6 +4,7 @@ const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin"); //css link到html
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     // entry: './src/script/main.js',
@@ -147,9 +148,16 @@ module.exports = {
 
 
             },
+            {
+    +         test: /\.(woff|woff2|eot|ttf|otf)$/,
+    +         use: [
+    +           'file-loader'
+    +         ]
+    +       }
         ]
     },
     plugins: [
+        new UglifyJSPlugin(), //未引用代码删除
         new webpack.optimize.UglifyJsPlugin(),
         new htmlWebpackPlugin({
             // filename: "index-[hash].html", //指定文件名
